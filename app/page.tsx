@@ -114,7 +114,7 @@ export default function Home() {
           checked={!isJS}
           onClick={(e) => {
             const target = e.target as any;
-            setToJquery(target.checked);
+            setToJquery(!target.checked);
           }}
           className="peer sr-only"
         />
