@@ -22,15 +22,12 @@ const handler = async (req: NextRequest): Promise<Response> => {
   }
 
   const payload = {
-    model: "text-davinci-003",
-    prompt,
-    temperature: 0.7,
-    top_p: 1,
-    frequency_penalty: 0,
-    presence_penalty: 0,
-    max_tokens: 2048,
+    model: "code-cushman-001",
+    prompt: prompt,
+    stop: "/* Command:",
+    max_tokens: 256,
+    temperature: 0,
     stream: true,
-    n: 1,
   };
 
   const res = await fetch("https://api.openai.com/v1/completions", {
@@ -50,3 +47,5 @@ const handler = async (req: NextRequest): Promise<Response> => {
 };
 
 export default handler;
+
+

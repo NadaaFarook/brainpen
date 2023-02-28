@@ -269,3 +269,58 @@
     transform: rotate(0deg);
   }
 }
+
+pre .plain { 
+  color: #fff 
+}
+
+/* html tags */
+pre .tag { 
+  color: #9a6e35; 
+  font-weight: bold; 
+}
+
+/* class tags */
+pre .classTag {
+  color:#ddca7e; 
+  font-weight:bold;
+}
+
+/* wrapped in quotes */
+pre .quote {
+  color:#96b38a; 
+  font-weight:bold;
+}
+
+/* plain text*/
+pre .text {
+  color:#ffffff; 
+  font-weight:bold;
+}
+
+/* line numbering */
+ol.linenums { 
+  margin-top: 0; 
+  margin-bottom: 0; 
+  color: #AEAEAE; 
+}
+
+li.L0,
+li.L1,
+li.L2,
+li.L3,
+li.L5,
+li.L6,
+li.L7,
+li.L8 { 
+  list-style-type: none; 
+}
+
+/* Alternate shading for lines */
+li.L1,
+li.L3,
+li.L5,
+li.L7,
+li.L9 {
+  
+}
